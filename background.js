@@ -1,5 +1,4 @@
 function ddg() {
-  console.log(chrome.tabs.url)
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     address = tabs[0].url.split('?q=')
     if (address.length == 2) {
